@@ -51,23 +51,28 @@ class __TwigTemplate_c487a4a090c8cf03a222e9dda4eedf3e extends Template
         yield from $this->unwrap()->yieldBlock('title', $context, $blocks);
         yield "</title>
         <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">
+        <link rel=\"stylesheet\" href=\"../assets/style/app.css\">
         ";
-        // line 8
+        // line 9
         yield "        ";
         yield from $this->unwrap()->yieldBlock('stylesheets', $context, $blocks);
-        // line 11
+        // line 12
         yield "
         ";
-        // line 12
+        // line 13
         yield from $this->unwrap()->yieldBlock('javascripts', $context, $blocks);
-        // line 15
+        // line 16
         yield "    </head>
     <body>
         ";
-        // line 17
-        yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
         // line 18
-        yield "    </body>
+        yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
+        // line 19
+        yield "        <script src=\"https://kit.fontawesome.com/a076d05399.js\"></script>
+        <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\"></script>
+        <script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js\"></script>
+        <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\"></script>
+    </body>
 </html>
 ";
         
@@ -90,14 +95,14 @@ class __TwigTemplate_c487a4a090c8cf03a222e9dda4eedf3e extends Template
         return; yield '';
     }
 
-    // line 8
+    // line 9
     public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 9
+        // line 10
         yield "            ";
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->env->getFunction('encore_entry_link_tags')->getCallable()("app"), "html", null, true);
         yield "
@@ -108,14 +113,14 @@ class __TwigTemplate_c487a4a090c8cf03a222e9dda4eedf3e extends Template
         return; yield '';
     }
 
-    // line 12
+    // line 13
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 13
+        // line 14
         yield "            ";
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->env->getFunction('encore_entry_script_tags')->getCallable()("app"), "html", null, true);
         yield "
@@ -126,7 +131,7 @@ class __TwigTemplate_c487a4a090c8cf03a222e9dda4eedf3e extends Template
         return; yield '';
     }
 
-    // line 17
+    // line 18
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -152,7 +157,7 @@ class __TwigTemplate_c487a4a090c8cf03a222e9dda4eedf3e extends Template
      */
     public function getDebugInfo()
     {
-        return array (  130 => 17,  119 => 13,  112 => 12,  101 => 9,  94 => 8,  80 => 5,  70 => 18,  68 => 17,  64 => 15,  62 => 12,  59 => 11,  56 => 8,  51 => 5,  45 => 1,);
+        return array (  135 => 18,  124 => 14,  117 => 13,  106 => 10,  99 => 9,  85 => 5,  71 => 19,  69 => 18,  65 => 16,  63 => 13,  60 => 12,  57 => 9,  51 => 5,  45 => 1,);
     }
 
     public function getSourceContext()
@@ -163,6 +168,7 @@ class __TwigTemplate_c487a4a090c8cf03a222e9dda4eedf3e extends Template
         <meta charset=\"UTF-8\">
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">
+        <link rel=\"stylesheet\" href=\"../assets/style/app.css\">
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
@@ -174,6 +180,10 @@ class __TwigTemplate_c487a4a090c8cf03a222e9dda4eedf3e extends Template
     </head>
     <body>
         {% block body %}{% endblock %}
+        <script src=\"https://kit.fontawesome.com/a076d05399.js\"></script>
+        <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\"></script>
+        <script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js\"></script>
+        <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js\"></script>
     </body>
 </html>
 ", "base.html.twig", "/var/www/project/templates/base.html.twig");

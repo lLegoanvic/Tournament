@@ -54,6 +54,10 @@ return [[
 '[C]Symfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%23addLink' => 1,
 'Symfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%24container' => 0,
 '[C]Symfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%24container' => 1,
+'App%5CController%5CHomeController' => 0,
+'[C]App%5CController%5CHomeController' => 1,
+'App%5CController%5CHomeController%23index' => 0,
+'[C]App%5CController%5CHomeController%23index' => 1,
 'App%5CController%5CRegistrationController' => 0,
 '[C]App%5CController%5CRegistrationController' => 1,
 'App%5CController%5CRegistrationController%23__construct' => 0,
@@ -66,6 +70,8 @@ return [[
 '[C]App%5CController%5CRegistrationController%24emailVerifier' => 1,
 'App%5CController%5CRegistrationController%24userService' => 0,
 '[C]App%5CController%5CRegistrationController%24userService' => 1,
+'App%5CController%5CRegistrationController%24userRepository' => 0,
+'[C]App%5CController%5CRegistrationController%24userRepository' => 1,
 'App%5CController%5CSecurityController' => 0,
 '[C]App%5CController%5CSecurityController' => 1,
 'App%5CController%5CSecurityController%23login' => 0,
@@ -714,6 +720,10 @@ return [[
 '[C]App%5CEntity%5CUser' => 1,
 'App%5CEntity%5CUser%23__construct' => 0,
 '[C]App%5CEntity%5CUser%23__construct' => 1,
+'App%5CEntity%5CUser%23setCreatedAtValue' => 0,
+'[C]App%5CEntity%5CUser%23setCreatedAtValue' => 1,
+'App%5CEntity%5CUser%23setUpdatedAtValue' => 0,
+'[C]App%5CEntity%5CUser%23setUpdatedAtValue' => 1,
 'App%5CEntity%5CUser%23getId' => 0,
 '[C]App%5CEntity%5CUser%23getId' => 1,
 'App%5CEntity%5CUser%23getUsername' => 0,
@@ -1272,6 +1282,6 @@ return [[
 ], [
 
 0 => [],
-1 => 1723025736,
+1 => 1723451382,
 
 ]];

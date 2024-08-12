@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+.vertical-nav {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #343a40;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.vertical-nav a {
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+.vertical-nav a:hover {
+    background-color: #495057;
+}
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+}

@@ -238,6 +238,15 @@
                 0 => '1.0|2.0|3.0',
             ),
         ),
+        'symfony/asset' => array(
+            'pretty_version' => 'v6.1.11',
+            'version' => '6.1.11.0',
+            'reference' => 'e82c6960ddcb07247207e321a1a017abed291a11',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/asset',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'symfony/cache' => array(
             'pretty_version' => 'v6.1.11',
             'version' => '6.1.11.0',
